@@ -1,0 +1,62 @@
+@import "functions";
+@import "mixin";
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:x-large;
+}
+
+ .cmLogo{
+    font-size:$tamañoLetraPequeña;
+} 
+.MargenNavBar{
+    margin-left: 20px;
+}
+.EnlacesDePieDePagina{
+    margin-top: 20px;
+}
+footer{
+    background-color:$ColorEmpresa;
+}
+.lineaSeparadoraAzul{
+    background-color: #2E76B8;
+    height: 40px;
+}
+
+.check-list {
+    @include check-list ;
+  }
+  .ColorCuadrosNM_GEO{
+    color: #B8DAFF;
+}
+.QuitarColorLink{
+    text-decoration:none;
+}
+  .hover{
+    @include hover ;
+  }
+
+  .Video{
+    @include video($VideoGrande) ;
+  }
+  .VideoContacto{
+    @include video($VideoPequeno) ;
+  }
+  .listado{
+    @include listado();
+  }
+
+  .VerTabla {
+    @include tabla();
+}
+.EliminarP{
+  @include tabla();
+  table tbody tr td:hover{
+    all: revert;
+  }
+}
+

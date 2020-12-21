@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: x-large;
+}
+
+.cmLogo {
+  font-size: 25px;
+}
+
+.MargenNavBar {
+  margin-left: 20px;
+}
+
+.EnlacesDePieDePagina {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #2E76B8;
+}
+
+.lineaSeparadoraAzul {
+  background-color: #2E76B8;
+  height: 40px;
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #2E76B8;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ColorCuadrosNM_GEO {
+  color: #B8DAFF;
+}
+
+.QuitarColorLink {
+  text-decoration: none;
+}
+
+.hover {
+  width: auto;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hover figure {
+  position: relative;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.hover figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.hover figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 103, 123, 0.6);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.hover figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.hover figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.hover figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+.Video {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.VideoContacto {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.VideoContacto video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.listado ul {
+  list-style: none;
+}
+
+.listado ul li {
+  font-family: Georgia,serif,Times;
+  font-size: 18px;
+  margin-top: 4%;
+}
+
+.listado ul li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #2E76B8;
+  border-left: 5px solid #ffff;
+  border-right: 5px solid #ffff;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.listado ul li a:hover {
+  -moz-transform: rotate(-5deg);
+  -moz-box-shadow: 10px 10px 20px #2E76B8;
+  -webkit-transform: rotate(-5deg);
+  -webkit-box-shadow: 10px 10px 20px #2E76B8;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  box-shadow: 10px 10px 20px #2E76B8;
+  margin-left: 10px;
+}
+
+.VerTabla {
+  height: 300px;
+  overflow: scroll;
+}
+
+.VerTabla table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.VerTabla table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.VerTabla table tr th {
+  color: #fff;
+  line-height: 100%;
+  text-transform: uppercase;
+  background-color: #2E76B8;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border-left: solid #ffff 3px;
+  border-right: solid #ffff 3px;
+  width: 265px;
+}
+
+.VerTabla table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.VerTabla table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.VerTabla table tbody tr td {
+  color: black;
+  line-height: 1.4;
+  position: relative;
+}
+
+.VerTabla table tbody tr td:hover {
+  color: #ffff;
+  border-left: solid #ffff 3px;
+  border-right: solid #ffff 3px;
+  background-color: #2E76B8;
+}
+
+.VerTabla table tbody tr:hover {
+  background-color: #e4e4e4;
+}
+
+.EliminarP {
+  height: 300px;
+  overflow: scroll;
+}
+
+.EliminarP table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.EliminarP table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.EliminarP table tr th {
+  color: #fff;
+  line-height: 100%;
+  text-transform: uppercase;
+  background-color: #2E76B8;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border-left: solid #ffff 3px;
+  border-right: solid #ffff 3px;
+  width: 265px;
+}
+
+.EliminarP table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.EliminarP table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.EliminarP table tbody tr td {
+  color: black;
+  line-height: 1.4;
+  position: relative;
+}
+
+.EliminarP table tbody tr td:hover {
+  color: #ffff;
+  border-left: solid #ffff 3px;
+  border-right: solid #ffff 3px;
+  background-color: #2E76B8;
+}
+
+.EliminarP table tbody tr:hover {
+  background-color: #e4e4e4;
+}
+
+.EliminarP table tbody tr td:hover {
+  all: revert;
+}
+/*# sourceMappingURL=style.css.map */
